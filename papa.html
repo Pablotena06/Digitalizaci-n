@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Mejorada</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #6200ea;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #3700b3;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 1rem 0;
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card img {
+            max-width: 100%;
+            display: block;
+        }
+        .card-content {
+            padding: 1rem;
+        }
+        footer {
+            background-color: #3700b3;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Mejorada</h1>
+        <p>Una experiencia moderna y visualmente atractiva</p>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Explora todo lo que nuestra página tiene para ofrecer. Descubre una experiencia única y agradable.</p>
+        </section>
+        <section id="acerca">
+            <h2>Acerca de Nosotros</h2>
+            <div class="card">
+                <img src="https://via.placeholder.com/800x400" alt="Sobre Nosotros">
+                <div class="card-content">
+                    <p>Somos una empresa dedicada a brindar las mejores soluciones en tecnología y diseño.</p>
+                </div>
+            </div>
+        </section>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <div class="card">
+                <img src="https://via.placeholder.com/800x400" alt="Servicios">
+                <div class="card-content">
+                    <ul>
+                        <li>Diseño Web Moderno</li>
+                        <li>Desarrollo de Aplicaciones</li>
+                        <li>Consultoría Tecnológica</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mi Página Mejorada. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
